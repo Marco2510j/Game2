@@ -1,0 +1,94 @@
+/* Fuente retro pixel */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Estilo global */
+body {
+    background-color: #000;
+    font-family: 'Press Start 2P', monospace;
+    color: #fff;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+/* Quitar bordes redondeados de Bootstrap */
+.btn,
+input,
+img,
+.progress,
+.form-control {
+    border-radius: 0 !important;
+}
+#iniciar_juego {
+    min-height: 100vh; /* Para que el fondo cubra toda la pantalla */
+}
+
+/* Títulos retro */
+h1, h2, h3 {
+    letter-spacing: 2px;
+    text-shadow: none;
+}
+
+/* Botones estilo retro */
+.btn {
+    border: 2px solid #fff !important;
+    padding: 8px 10px !important;
+    box-shadow: none !important;
+    transform: scale(1);
+    transition: 0.1s;
+    font-size: 10px !important;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Input retro */
+.form-control {
+    background: #111 !important;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    font-size: 10px !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 2px solid red !important;
+}
+
+/* Bordes retro a contenedores */
+#player1, #player2, #player1_avatar, #player2_avatar {
+    border: 3px solid #fff;
+    padding: 10px;
+}
+
+/* Imagenes de selección efecto pixel */
+#player1_seleccion img, #player2_seleccion img {
+    border: 2px solid #fff;
+    image-rendering: pixelated;
+}
+
+#player1_seleccion img:hover, #player2_seleccion img:hover {
+    border-color: yellow;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+/* Barra de vida estilo simple */
+.progress {
+    background: #222 !important;
+    border: 2px solid #fff !important;
+}
+
+/* Quitar estilos modernos de sombras */
+* {
+    box-shadow: none !important;
+}
+
+/* VS grande retro */
+#versus h1 {
+    font-size: 60px;
+    color: #04d604;
+}
+
